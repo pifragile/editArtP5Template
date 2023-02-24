@@ -1,3 +1,4 @@
+// example
 const canvas = document.createElement("canvas");
 canvas.id = "myCanvas";
 canvas.width = window.innerHeight;
@@ -11,6 +12,7 @@ body.appendChild(canvas);
 const ctx = canvas.getContext("2d");
 
 function drawArt() {
+    // example
     const width = window.innerWidth;
     const height = window.innerHeight;
     canvas.width = width;
