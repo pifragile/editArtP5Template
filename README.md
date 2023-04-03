@@ -7,8 +7,7 @@ This is a simple, unopinionated template for creating projects on EditART.
 > **_IMPORTANT:_** Every single part of the output must ONLY depend on the values `m0`..`m4`. Otherwise the pieces will change after minting.
 - The entrypoint is the `drawArt()` function which will be triggered automatically everytime the sliders change. Find an example in `index.js`.
 
-
-- Only static images are supported.
+- If your project is animated, please restart the animation on each call to `drawArt()`
 - Your artwork should be able to handle different window sizes. An event listener is active that will call `drawArt()` every time the window size changes.
 - If you use any libraries, include all source files in the project. Do not load any dependencies from the internet.
 - Make a sketch that renders fast for the best user experience.
