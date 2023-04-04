@@ -5,6 +5,7 @@ parent.postMessage({ editArtTemplateVersion: 1 }, "*");
 
 window.capturePreview = false;
 function triggerPreview() {
+    if(!window.capturePreview) console.log('Trigger preview')
     window.capturePreview = true;
 }
 
@@ -58,7 +59,6 @@ function triggerDraw() {
     seedRandomness();
     drawArt();
     parent.postMessage("editArtSketchLoaded", "*");
-    triggerPreview();
 }
 
 window.addEventListener("resize", (e) => triggerDraw());
