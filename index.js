@@ -1,8 +1,8 @@
 // example
 const canvas = document.createElement("canvas");
 canvas.id = "myCanvas";
-canvas.width = window.innerHeight;
-canvas.height = window.innerWidth;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 canvas.style.zIndex = 8;
 canvas.style.position = "absolute";
 
