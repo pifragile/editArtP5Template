@@ -1,6 +1,6 @@
-# EditART Simple Template Instructions
+# EditART p5.js Template Instructions
 
-This is a simple, unopinionated template for creating projects on EditART.
+This is a template for p5.js for creating projects on EditART.
 
 ## Create your art
 
