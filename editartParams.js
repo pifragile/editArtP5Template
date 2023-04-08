@@ -26,7 +26,8 @@ console.log(queryString);
 if (queryString) {
     getParams(queryString);
 }
-triggerDraw();
+
+seedRandomness();
 
 function truncate(i) {
     return Math.max(Math.min(i, 0.99999999), 0);
@@ -57,11 +58,14 @@ window.addEventListener("message", (e) => {
 
 function triggerDraw() {
     seedRandomness();
-    drawArt();
+    cs = min(windowHeight, windowWidth);
+    resizeCanvas(cs, cs);
     parent.postMessage("editArtSketchLoaded", "*");
 }
 
-window.addEventListener("resize", (e) => triggerDraw());
+function windowResized() {
+    triggerDraw()
+}
 
 function getRNG(num) {
     return sfc32(...cyrb128(randomSeed + num.toString()));
