@@ -3,6 +3,8 @@
 
 parent.postMessage({ editArtTemplateVersion: 1 }, "*");
 
+let resetAnimation = false;
+
 window.capturePreview = false;
 function triggerPreview() {
     if(!window.capturePreview) console.log('Trigger preview')
@@ -58,6 +60,7 @@ window.addEventListener("message", (e) => {
 
 function triggerDraw() {
     seedRandomness();
+    resetAnimation = true;
     cs = min(windowHeight, windowWidth);
     resizeCanvas(cs, cs);
     parent.postMessage("editArtSketchLoaded", "*");
