@@ -17,3 +17,8 @@ function draw() {
     }
     triggerPreview();
 }
+
+function windowResizedUser() {
+    cs = min(windowHeight, windowWidth);
+    resizeCanvas(cs, cs);
+}

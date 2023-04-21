@@ -61,13 +61,13 @@ window.addEventListener("message", (e) => {
 function triggerDraw() {
     seedRandomness();
     resetAnimation = true;
-    cs = min(windowHeight, windowWidth);
-    resizeCanvas(cs, cs);
+    draw();
     parent.postMessage("editArtSketchLoaded", "*");
 }
 
 function windowResized() {
-    triggerDraw()
+    windowResizedUser();
+    triggerDraw();
 }
 
 function getRNG(num) {
