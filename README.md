@@ -30,7 +30,7 @@ This is a template for p5.js for creating projects on EditART.
 If you need randomness, you can use the functions `randomM0()`..`randomM4()`
 these functions provide randomness seeded by the respective values `m0`..`m4`.
 
-> **_NOTE:_** You can set the `randomSeed` variable in `index.html` to any string you like in order to distinguish your randomness from the one of other projects.
+> **_NOTE:_** You can set the `randomSeedEditArt` variable in `index.html` to any string you like in order to distinguish your randomness from the one of other projects.
 > **_IMPORTANT:_** Don't use any source of randomness other than the one described below.
 
 ## Testing
