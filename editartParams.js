@@ -61,8 +61,7 @@ window.addEventListener("message", (e) => {
 function triggerDraw() {
     seedRandomness();
     resetAnimation = true;
-    draw();
-    parent.postMessage("editArtSketchLoaded", "*");
+    if(!isLooping()) redraw();
 }
 
 function windowResized() {
