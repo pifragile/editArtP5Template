@@ -65,8 +65,9 @@ function triggerDraw() {
 }
 
 function windowResized() {
+    seedRandomness();
+    resetAnimation = true;
     windowResizedUser();
-    triggerDraw();
 }
 
 function getRNG(num) {
