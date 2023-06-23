@@ -6,7 +6,7 @@ This is a template for p5.js for creating projects on EditART.
 
 -   Use the variables `m0`, `m1`, `m2`, `m3`, `m4` which are tha values of the 5 sliders.
     > **_IMPORTANT:_** Every single part of the output must ONLY depend on the values `m0`..`m4`. Otherwise the pieces will change after minting.
--   The entrypoint is the `draw()` function which will be triggered automatically everytime the sliders change. Find an example in `index.js`.
+-   The entrypoint is the `draw()` function which will be triggered automatically everytime the sliders change. Everything necessary for the sketch to render properly should be initialized in `draw()`. Find an example in `index.js`.
 -   Call `triggerPreview()` at the point in time when the preview image should be renderd.
 -   To handle window resizing please do everything necessary in `windowResizedUser()`. Do not overwrite `windowResized()` unless you know exactly what you are doing.
 -   If your project is animated, please restart the animation when the sliders change. You can do this as follows:
