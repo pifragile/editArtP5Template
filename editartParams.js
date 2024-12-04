@@ -22,6 +22,7 @@ let randomM1;
 let randomM2;
 let randomM3;
 let randomM4;
+let randomFull;
 
 const queryString = window.location.search;
 console.log(queryString);
@@ -80,6 +81,7 @@ function seedRandomness() {
     randomM2 = getRNG(m2);
     randomM3 = getRNG(m3);
     randomM4 = getRNG(m4);
+    randomFull = getRNG(`${m0}${m1}${m2}${m3}${m4}`)
 }
 
 function cyrb128(str) {
