@@ -24,6 +24,7 @@ This is a template for p5.js for creating projects on EditART.
 -   If you use any libraries, include all source files in the project. Do not load any dependencies from the internet.
 
 -   Make a sketch that **renders fast** for the best user experience.
+-   All token previews will be in square format.
 
 ## Randomness
 
