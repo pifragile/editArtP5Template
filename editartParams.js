@@ -9,6 +9,7 @@ window.capturePreview = false;
 function triggerPreview() {
     if(!window.capturePreview) console.log('Trigger preview')
     window.capturePreview = true;
+    window.parent.postMessage({ type: "sketch-loaded" }, "*");
 }
 
 let m0 = 0.5;
