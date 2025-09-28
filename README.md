@@ -32,7 +32,12 @@ If you need randomness, you can use the functions `randomM0()`..`randomM4()`
 these functions provide randomness seeded by the respective values `m0`..`m4`.
 
 > **_NOTE:_** You can set the `randomSeedEditArt` variable in `index.html` to any string you like in order to distinguish your randomness from the one of other projects.
-> **_IMPORTANT:_** Don't use any source of randomness other than the one described above.
+
+> **_IMPORTANT:_** Don't use any source of randomness other than the one described above. 
+
+## Sliderless Mode
+
+If you want to use the sliderless feature as can be seen in [this example](https://www.editart.xyz/series/KT1VwpEbuWsxevM9JGF9dG5JXT4bmpNDYp3h), you can simply use `randomFull()` as your randomness function and test in the [sliderless sandbox](https://www.editart.xyz/sandbox?sliderLess=true).
 
 ## Testing
 
